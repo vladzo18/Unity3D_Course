@@ -1794,10 +1794,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 401614946}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 644c1b198206f884390fbdfce1ae430b, type: 3}
+  m_Script: {fileID: 11500000, guid: 3c795996c061de643b5bf624800e50c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _timeDelay: 0.2
+  _takedHealth: 10
 --- !u!70 &401614948
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -3693,7 +3694,7 @@ GameObject:
   - component: {fileID: 803132458}
   - component: {fileID: 803132457}
   m_Layer: 0
-  m_Name: AnotherBottle
+  m_Name: BigBottle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3708,10 +3709,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 803132456}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 644c1b198206f884390fbdfce1ae430b, type: 3}
+  m_Script: {fileID: 11500000, guid: 3c795996c061de643b5bf624800e50c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _timeDelay: 0.2
+  _takedHealth: 25
 --- !u!70 &803132458
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -4236,8 +4238,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1733538262}
   - component: {fileID: 1733538261}
-  - component: {fileID: 1733538260}
   - component: {fileID: 1733538263}
+  - component: {fileID: 1733538260}
   m_Layer: 0
   m_Name: Shield
   m_TagString: Untagged
@@ -4254,10 +4256,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1733538259}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 644c1b198206f884390fbdfce1ae430b, type: 3}
+  m_Script: {fileID: 11500000, guid: 2fe815d4e29fe16478ed3fe52efc06fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _timeDelay: 0.2
+  _takedShieldForce: 10
 --- !u!212 &1733538261
 SpriteRenderer:
   m_ObjectHideFlags: 0

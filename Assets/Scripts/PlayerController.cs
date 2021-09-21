@@ -111,8 +111,12 @@ public class PlayerController : MonoBehaviour {
       _jumpLock = _animator.GetBool(_crouchAnimationKey);
    }
 
-   public void increseHealth() {
-      Debug.Log("Ухх здоровье!)");
+   public void increseHealth(int healthAmount) {
+      Debug.Log("Ухх здоровье!) + " + healthAmount);
+   }
+   
+   public void increseShieldForce(int shieldForceAmount) {
+      Debug.Log("Вахх защита!) + " + shieldForceAmount);
    }
    
    private enum MoveVariant {
