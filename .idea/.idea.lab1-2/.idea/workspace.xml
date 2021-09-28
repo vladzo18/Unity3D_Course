@@ -21,225 +21,22 @@
   <component name="ChangeListManager">
     <list default="true" id="c2187b14-add1-496d-a706-54b6e6ff11fd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.lab1-2/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.lab1-2/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.lab1-2/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.lab1-2/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.lab1-2/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.lab1-2/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.lab1-2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.lab1-2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.lab1/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.lab1/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.lab1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.lab1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.pz1/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.pz1/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.pz1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.pz1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Player.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player/Atack.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Player/Atack.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player/Atack.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Player/Atack.anim.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player/Crouch.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Player/Crouch.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player/Crouch.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Player/Crouch.anim.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player/Hurt.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Player/Hurt.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player/Hurt.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Player/Hurt.anim.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player/Idle.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Player/Idle.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player/Idle.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Player/Idle.anim.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player/Jump.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Player/Jump.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player/Jump.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Player/Jump.anim.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player/Player.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Player/Player.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player/Player.controller.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Player/Player.controller.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player/Run.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Player/Run.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player/Run.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Player/Run.anim.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CameraController.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CameraController.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Item.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Item.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CameraController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CameraController.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Items/BottleHp.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Items/BottleHp.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Items/Item.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Items/Item.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Items/Shield.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Items/Shield.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Items &amp; FireBall.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Items &amp; FireBall.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Items &amp; FireBall/fireball 1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Items &amp; FireBall/fireball 1.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Items &amp; FireBall/fireball 2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Items &amp; FireBall/fireball 2.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Items &amp; FireBall/fireball 3.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Items &amp; FireBall/fireball 3.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Items &amp; FireBall/fireball 4.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Items &amp; FireBall/fireball 4.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Items &amp; FireBall/item1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Items &amp; FireBall/item1.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Items &amp; FireBall/item2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Items &amp; FireBall/item2.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Items &amp; FireBall/item3.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Items &amp; FireBall/item3.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Items &amp; FireBall/item4.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Items &amp; FireBall/item4.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Items &amp; FireBall/item5.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Items &amp; FireBall/item5.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/No Sword.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/No Sword.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/No Sword/SNinja_nosword_crouch 1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/No Sword/SNinja_nosword_crouch 1.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/No Sword/SNinja_nosword_crouch 2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/No Sword/SNinja_nosword_crouch 2.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/No Sword/SNinja_nosword_crouch 3.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/No Sword/SNinja_nosword_crouch 3.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/No Sword/SNinja_nosword_crouchdash 1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/No Sword/SNinja_nosword_crouchdash 1.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/No Sword/SNinja_nosword_crouchdash 2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/No Sword/SNinja_nosword_crouchdash 2.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/No Sword/SNinja_nosword_idle 1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/No Sword/SNinja_nosword_idle 1.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/No Sword/SNinja_nosword_idle 2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/No Sword/SNinja_nosword_idle 2.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/No Sword/SNinja_nosword_idle 3.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/No Sword/SNinja_nosword_idle 3.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/No Sword/SNinja_nosword_idle 4.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/No Sword/SNinja_nosword_idle 4.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/No Sword/SNinja_nosword_idle 5.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/No Sword/SNinja_nosword_idle 5.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/No Sword/SNinja_nosword_idle 6.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/No Sword/SNinja_nosword_idle 6.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/No Sword/SNinja_nosword_jump 1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/No Sword/SNinja_nosword_jump 1.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/No Sword/SNinja_nosword_jump 2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/No Sword/SNinja_nosword_jump 2.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/No Sword/SNinja_nosword_jump 3.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/No Sword/SNinja_nosword_jump 3.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/No Sword/SNinja_nosword_run 01.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/No Sword/SNinja_nosword_run 01.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/No Sword/SNinja_nosword_run 02.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/No Sword/SNinja_nosword_run 02.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/No Sword/SNinja_nosword_run 03.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/No Sword/SNinja_nosword_run 03.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/No Sword/SNinja_nosword_run 04.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/No Sword/SNinja_nosword_run 04.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/No Sword/SNinja_nosword_run 05.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/No Sword/SNinja_nosword_run 05.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/No Sword/SNinja_nosword_run 06.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/No Sword/SNinja_nosword_run 06.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/No Sword/SNinja_nosword_run 07.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/No Sword/SNinja_nosword_run 07.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/No Sword/SNinja_nosword_run 08.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/No Sword/SNinja_nosword_run 08.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/No Sword/SNinja_nosword_run 09.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/No Sword/SNinja_nosword_run 09.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/No Sword/SNinja_nosword_run 10.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/No Sword/SNinja_nosword_run 10.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/No Sword/SNinja_nosword_run 11.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/No Sword/SNinja_nosword_run 11.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Parts.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Parts.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Parts/4.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Parts/4.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Parts/Feet.PNG.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Parts/Feet.PNG.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Parts/Head.PNG.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Parts/Head.PNG.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Parts/Knee.PNG.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Parts/Knee.PNG.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Parts/Left hand.PNG.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Parts/Left hand.PNG.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Parts/Right Hand.PNG.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Parts/Right Hand.PNG.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Parts/Shoulder2.PNG.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Parts/Shoulder2.PNG.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Parts/leg.PNG.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Parts/leg.PNG.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Parts/lower torso.PNG.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Parts/lower torso.PNG.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Parts/shoulder.PNG.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Parts/shoulder.PNG.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Parts/sword.PNG.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Parts/sword.PNG.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Parts/upper torso.PNG.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Parts/upper torso.PNG.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_Atk 1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_Atk 1.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_Atk 2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_Atk 2.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_Atk 3.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_Atk 3.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_Atk 4.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_Atk 4.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_Atk 5.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_Atk 5.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_Atk 6.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_Atk 6.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_crouch 1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_crouch 1.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_crouch 2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_crouch 2.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_crouch 3.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_crouch 3.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_crouchdash 1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_crouchdash 1.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_crouchdash 2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_crouchdash 2.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_hurt 1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_hurt 1.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_hurt 2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_hurt 2.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_hurt2 1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_hurt2 1.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_hurt2 2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_hurt2 2.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_hurt2 3.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_hurt2 3.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_idle 1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_idle 1.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_idle 2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_idle 2.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_idle 3.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_idle 3.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_idle 4.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_idle 4.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_idle 5.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_idle 5.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_idle 6.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_idle 6.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_jump 1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_jump 1.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_jump 2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_jump 2.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_jump 3.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_jump 3.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_jumpatk 1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_jumpatk 1.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_jumpatk 2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_jumpatk 2.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_jumpatk 3.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_jumpatk 3.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_jumpatk 4.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_jumpatk 4.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_jumpatk 5.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_jumpatk 5.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_jumpatk 6.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_jumpatk 6.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_jumpskill 1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_jumpskill 1.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_jumpskill 2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_jumpskill 2.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_jumpskill 3.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_jumpskill 3.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_jumpskill 4.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_jumpskill 4.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_jumpskill 5.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_jumpskill 5.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_jumpskill 6.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_jumpskill 6.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_jumpskill 7.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_jumpskill 7.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_redsword 1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_redsword 1.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_redsword 2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_redsword 2.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_redsword 3.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_redsword 3.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_redsword 4.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_redsword 4.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_redsword 5.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_redsword 5.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_redsword 6.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_redsword 6.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_redsword 7.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_redsword 7.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_run 01.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_run 01.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_run 02.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_run 02.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_run 03.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_run 03.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_run 04.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_run 04.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_run 05.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_run 05.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_run 06.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_run 06.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_run 07.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_run 07.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_run 08.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_run 08.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_run 09.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_run 09.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_run 10.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_run 10.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_run 11.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_run 11.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_skill 1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_skill 1.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_skill 2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_skill 2.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_skill 3.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_skill 3.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_skill 4.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_skill 4.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_skill 5.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_skill 5.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_skill 6.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_skill 6.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_skill 7.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_skill 7.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_strike 1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_strike 1.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_strike 2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_strike 2.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_strike 3.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_strike 3.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_strike 4.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_strike 4.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_strike 5.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_strike 5.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_strike 6.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_strike 6.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_strike 7.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_strike 7.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_strike 8.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_strike 8.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_swordidle 1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_swordidle 1.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_swordidle 2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_swordidle 2.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_swordidle 3.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Ninja PNG/Sword/SNinja_swordidle 3.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/background.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/background.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/background/background.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/background/background.jpg.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/background/darkBack.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/background/darkBack.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/ground.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/ground.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/ground/GroundTilemap.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/ground/GroundTilemap.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/ground/GroundTilemap.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/ground/GroundTilemap.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/ground/groundTiles.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/ground/groundTiles.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/ground/tiles.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/ground/tiles.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/ground/tiles/groundTiles_0.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/ground/tiles/groundTiles_0.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/ground/tiles/groundTiles_0.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/ground/tiles/groundTiles_0.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/ground/tiles/groundTiles_1.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/ground/tiles/groundTiles_1.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/ground/tiles/groundTiles_1.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/ground/tiles/groundTiles_1.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/ground/tiles/groundTiles_10.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/ground/tiles/groundTiles_10.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/ground/tiles/groundTiles_10.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/ground/tiles/groundTiles_10.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/ground/tiles/groundTiles_11.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/ground/tiles/groundTiles_11.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/ground/tiles/groundTiles_11.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/ground/tiles/groundTiles_11.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/ground/tiles/groundTiles_12.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/ground/tiles/groundTiles_12.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/ground/tiles/groundTiles_12.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/ground/tiles/groundTiles_12.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/ground/tiles/groundTiles_13.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/ground/tiles/groundTiles_13.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/ground/tiles/groundTiles_13.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/ground/tiles/groundTiles_13.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/ground/tiles/groundTiles_14.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/ground/tiles/groundTiles_14.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/ground/tiles/groundTiles_14.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/ground/tiles/groundTiles_14.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/ground/tiles/groundTiles_15.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/ground/tiles/groundTiles_15.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/ground/tiles/groundTiles_15.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/ground/tiles/groundTiles_15.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/ground/tiles/groundTiles_16.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/ground/tiles/groundTiles_16.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/ground/tiles/groundTiles_16.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/ground/tiles/groundTiles_16.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/ground/tiles/groundTiles_17.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/ground/tiles/groundTiles_17.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/ground/tiles/groundTiles_17.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/ground/tiles/groundTiles_17.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/ground/tiles/groundTiles_18.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/ground/tiles/groundTiles_18.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/ground/tiles/groundTiles_18.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/ground/tiles/groundTiles_18.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/ground/tiles/groundTiles_19.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/ground/tiles/groundTiles_19.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/ground/tiles/groundTiles_19.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/ground/tiles/groundTiles_19.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/ground/tiles/groundTiles_2.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/ground/tiles/groundTiles_2.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/ground/tiles/groundTiles_2.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/ground/tiles/groundTiles_2.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/ground/tiles/groundTiles_20.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/ground/tiles/groundTiles_20.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/ground/tiles/groundTiles_20.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/ground/tiles/groundTiles_20.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/ground/tiles/groundTiles_21.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/ground/tiles/groundTiles_21.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/ground/tiles/groundTiles_21.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/ground/tiles/groundTiles_21.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/ground/tiles/groundTiles_3.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/ground/tiles/groundTiles_3.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/ground/tiles/groundTiles_3.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/ground/tiles/groundTiles_3.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/ground/tiles/groundTiles_4.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/ground/tiles/groundTiles_4.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/ground/tiles/groundTiles_4.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/ground/tiles/groundTiles_4.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/ground/tiles/groundTiles_5.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/ground/tiles/groundTiles_5.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/ground/tiles/groundTiles_5.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/ground/tiles/groundTiles_5.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/ground/tiles/groundTiles_6.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/ground/tiles/groundTiles_6.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/ground/tiles/groundTiles_6.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/ground/tiles/groundTiles_6.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/ground/tiles/groundTiles_7.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/ground/tiles/groundTiles_7.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/ground/tiles/groundTiles_7.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/ground/tiles/groundTiles_7.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/ground/tiles/groundTiles_8.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/ground/tiles/groundTiles_8.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/ground/tiles/groundTiles_8.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/ground/tiles/groundTiles_8.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/ground/tiles/groundTiles_9.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/ground/tiles/groundTiles_9.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/ground/tiles/groundTiles_9.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/ground/tiles/groundTiles_9.asset.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/PackageManagerSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/PackageManagerSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/Physics2DSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Physics2DSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/UnityConnectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/UnityConnectSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/VersionControlSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/VersionControlSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -254,10 +51,15 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/Scripts/Item.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Items/Item.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Items/Shield.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Items/BottleHp.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Items/ManaBoll.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Items/Item.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Items/Coin.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Spikes.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Ladder.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/EndLevelDoor.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" />
       </list>
     </option>
   </component>
@@ -302,7 +104,13 @@
       <option name="presentableId" value="Default" />
       <updated>1631985348253</updated>
       <workItem from="1631985349896" duration="6373000" />
-      <workItem from="1632241950836" duration="1514000" />
+      <workItem from="1632241950836" duration="2658000" />
+      <workItem from="1632499913118" duration="6100000" />
+      <workItem from="1632509720813" duration="2445000" />
+      <workItem from="1632574631644" duration="12589000" />
+      <workItem from="1632650850907" duration="213000" />
+      <workItem from="1632655281215" duration="4895000" />
+      <workItem from="1632832937647" duration="6515000" />
     </task>
     <servers />
   </component>
@@ -321,25 +129,32 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="407" y="216" key="RiderGenerateDialog" timestamp="1632657914207">
+      <screen x="0" y="0" width="1280" height="984" />
+    </state>
+    <state x="407" y="216" key="RiderGenerateDialog/0.0.1280.984@0.0.1280.984" timestamp="1632657914207" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Scripts/PlayerController.cs</url>
-          <line>105</line>
-          <properties documentPath="C:\Projects\Unity\lab1-2\Assets\Scripts\PlayerController.cs" initialLine="105">
+          <line>136</line>
+          <properties documentPath="C:\Projects\Unity\lab1-2\Assets\Scripts\PlayerController.cs" initialLine="136">
             <startOffsets>
-              <option value="3587" />
+              <option value="4688" />
             </startOffsets>
             <endOffsets>
-              <option value="3588" />
+              <option value="4689" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="2" />
+          <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

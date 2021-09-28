@@ -8,4 +8,8 @@ public class BottleHp : Item {
     protected override void doItemAction(PlayerController player) {
        player.increseHealth(_takedHealth);
     }
+
+    protected override bool canTakeItem(PlayerController player) {
+        return !player.isHealthFull();
+    }
 }
