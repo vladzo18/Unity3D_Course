@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour {
-   
    [Header("Movement")]
    [SerializeField] private Transform _transform;
    [SerializeField] private Rigidbody2D _rigidbody;
@@ -38,6 +37,7 @@ public class PlayerController : MonoBehaviour {
    [SerializeField] private string _jumpAnimationKey;
    [SerializeField] private string _runAnimationKey;
    [SerializeField] private string _crouchAnimationKey;
+   [SerializeField] private string _hurtAnimationKey;
 
    [Header("UI")] 
    [SerializeField] private TMP_Text _coinsAmountText;
@@ -50,6 +50,8 @@ public class PlayerController : MonoBehaviour {
    private bool _isCrouching;
    private bool _jumpLock = false;
    private int _coins;
+   private float _lastPushTime;
+   private bool _isGrounded;
 
    public bool canClimb { get; set; }
 
@@ -76,6 +78,16 @@ public class PlayerController : MonoBehaviour {
    }
 
    private void FixedUpdate() {
+      _isGrounded = Physics2D.OverlapCircle(_groundedTrigger.position, _groundedTriggerRadius, _groundLayer);
+      
+      if (_animator.GetBool(_hurtAnimationKey)) {
+         if (_isGrounded && Time.time - _lastPushTime > 0.02f) {
+            _animator.SetBool(_hurtAnimationKey, false);
+         }
+         
+         return;
+      }
+      
       movePlayerLogic(_variantOfMovement);
       
       jumpLogic();
@@ -117,8 +129,6 @@ public class PlayerController : MonoBehaviour {
    }
 
    private void jumpLogic() {
-      bool _isGrounded = Physics2D.OverlapCircle(_groundedTrigger.position, _groundedTriggerRadius, _groundLayer);
-      
       if (_isGrounded && _isJumping && !_jumpLock) {
          _rigidbody.AddForce(Vector2.up * _jumpForce);
          _isGrounded = false;
@@ -165,13 +175,20 @@ public class PlayerController : MonoBehaviour {
       }
    }
 
-   public void takeDamage(int damage) {
+   public void takeDamage(int damage, float pushPower = 0, float enemyPositionX = 0) {
       _currentHealthAmount -= damage;
       _healthAmountSlider.value = _currentHealthAmount;
-
+      
       if (_currentHealthAmount <= 0) {
          gameObject.SetActive(false);
          Invoke(nameof(reloadSceneIfPlayerDeed), 2f);
+      }
+
+      if (pushPower != 0) {
+         int pushDirection = _transform.position.x > enemyPositionX ? 1 : -1;
+         _rigidbody.AddForce(new Vector2(pushDirection * pushPower / 2, pushPower));
+         _animator.SetBool(_hurtAnimationKey, true);
+         _lastPushTime = Time.time;
       }
    }
 
@@ -198,7 +215,7 @@ public class PlayerController : MonoBehaviour {
 
    private enum MoveVariant {
       TransformPosition,
-      TransformTranslete,
+      TransformTranslete, 
       RigitbodyVelocity,
       RigitbodyAddForce,
       RigitbodyMovePosition

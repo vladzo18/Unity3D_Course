@@ -1,0 +1,624 @@
+fileFormatVersion: 2
+guid: dfdf1750a6d4cc948a5751032feff192
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4806620149409124855
+    second: jellyEnemy_0
+  - first:
+      213: -4370486457616923658
+    second: jellyEnemy_1
+  - first:
+      213: 5468878306384588062
+    second: jellyEnemy_2
+  - first:
+      213: -6604847373507678820
+    second: jellyEnemy_3
+  - first:
+      213: -1472914137223501467
+    second: jellyEnemy_4
+  - first:
+      213: -8442752988712192550
+    second: jellyEnemy_5
+  - first:
+      213: 5016339434721620556
+    second: jellyEnemy_6
+  - first:
+      213: 7177708127161697616
+    second: jellyEnemy_7
+  - first:
+      213: 1971805460911932545
+    second: jellyEnemy_8
+  - first:
+      213: -7428977924110854
+    second: jellyEnemy_9
+  - first:
+      213: -3691499384754948326
+    second: jellyEnemy_10
+  - first:
+      213: -5557129561743391846
+    second: jellyEnemy_11
+  - first:
+      213: 1969089673889480433
+    second: jellyEnemy_12
+  - first:
+      213: -4149085166296778499
+    second: jellyEnemy_13
+  - first:
+      213: -2579338378978954259
+    second: jellyEnemy_14
+  - first:
+      213: -4782578071210253375
+    second: jellyEnemy_15
+  - first:
+      213: 2969136411574460701
+    second: jellyEnemy_16
+  - first:
+      213: -6109579118939532088
+    second: jellyEnemy_17
+  - first:
+      213: 8688596873762521891
+    second: jellyEnemy_18
+  - first:
+      213: 7809799080082524299
+    second: jellyEnemy_19
+  - first:
+      213: -8909513711398556664
+    second: jellyEnemy_20
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 49
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 49
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 49
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: jellyEnemy_0
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 543
+        width: 197
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f114cf2f8b84b240800000000000000
+      internalID: 4806620149409124855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jellyEnemy_1
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 544
+        width: 199
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f3861ef8b9e853c0800000000000000
+      internalID: -4370486457616923658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jellyEnemy_2
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 543
+        width: 197
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1da4e328db55eb40800000000000000
+      internalID: 5468878306384588062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jellyEnemy_3
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 544
+        width: 198
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9d276ace4ed654a0800000000000000
+      internalID: -6604847373507678820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jellyEnemy_4
+      rect:
+        serializedVersion: 2
+        x: 1014
+        y: 543
+        width: 217
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 569642265682f8be0800000000000000
+      internalID: -1472914137223501467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jellyEnemy_5
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 335
+        width: 198
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad5317d63e055da80800000000000000
+      internalID: -8442752988712192550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jellyEnemy_6
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 333
+        width: 205
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c42bd5f532e9d9540800000000000000
+      internalID: 5016339434721620556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jellyEnemy_7
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 332
+        width: 216
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05548e433875c9360800000000000000
+      internalID: 7177708127161697616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jellyEnemy_8
+      rect:
+        serializedVersion: 2
+        x: 745
+        y: 332
+        width: 221
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 184c4df9e924d5b10800000000000000
+      internalID: 1971805460911932545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jellyEnemy_9
+      rect:
+        serializedVersion: 2
+        x: 1025
+        y: 332
+        width: 215
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af50ac9426b95eff0800000000000000
+      internalID: -7428977924110854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jellyEnemy_10
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 119
+        width: 216
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a17bb133ed825ccc0800000000000000
+      internalID: -3691499384754948326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jellyEnemy_11
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 274
+        width: 8
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9386754b1c11e2b0800000000000000
+      internalID: -5557129561743391846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jellyEnemy_12
+      rect:
+        serializedVersion: 2
+        x: 802
+        y: 92
+        width: 200
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fe721f20ac935b10800000000000000
+      internalID: 1969089673889480433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jellyEnemy_13
+      rect:
+        serializedVersion: 2
+        x: 743
+        y: 256
+        width: 20
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df8b908260d7b66c0800000000000000
+      internalID: -4149085166296778499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jellyEnemy_14
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 47
+        width: 229
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de37d650969543cd0800000000000000
+      internalID: -2579338378978954259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jellyEnemy_15
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 199
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c3a0fa559ed0adb0800000000000000
+      internalID: -4782578071210253375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jellyEnemy_16
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 194
+        width: 20
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d11e29dc5dd743920800000000000000
+      internalID: 2969136411574460701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jellyEnemy_17
+      rect:
+        serializedVersion: 2
+        x: 1005
+        y: 146
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c41778492a663ba0800000000000000
+      internalID: -6109579118939532088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jellyEnemy_18
+      rect:
+        serializedVersion: 2
+        x: 1026
+        y: 47
+        width: 206
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3234f2192d8149870800000000000000
+      internalID: 8688596873762521891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jellyEnemy_19
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 49
+        width: 199
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b88cd7f92eaf16c60800000000000000
+      internalID: 7809799080082524299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jellyEnemy_20
+      rect:
+        serializedVersion: 2
+        x: 997
+        y: 118
+        width: 12
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80ced9eeb7c0b5480800000000000000
+      internalID: -8909513711398556664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -15,7 +15,7 @@ TagManager:
   - Items
   - Ladder
   - Platform
-  - 
+  - Enemy
   - 
   - 
   - 
@@ -40,10 +40,4 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
-    locked: 0
-  - name: Player
-    uniqueID: 2547459791
-    locked: 0
-  - name: Ground
-    uniqueID: 3128971641
     locked: 0

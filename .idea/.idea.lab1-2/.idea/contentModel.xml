@@ -6,6 +6,15 @@
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
           <e p="EndLevelDoor.cs" t="Include" />
+          <e p="Enemys" t="Include">
+            <e p="AgentEnemy.cs" t="Include" />
+            <e p="Arrow.cs" t="Include" />
+            <e p="Bullet.cs" t="Include" />
+            <e p="FollowTo.cs" t="Include" />
+            <e p="JellyEnemy.cs" t="Include" />
+            <e p="OrcEnemy.cs" t="Include" />
+            <e p="PlantEnemy.cs" t="Include" />
+          </e>
           <e p="Items" t="Include">
             <e p="BottleHP.cs" t="Include" />
             <e p="Coin.cs" t="Include" />
