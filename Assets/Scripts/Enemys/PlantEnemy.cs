@@ -19,8 +19,9 @@ public class PlantEnemy : MonoBehaviour {
    
    private int _curentHealthAmount;
    private float _lastAtackTime;
-   private PlayerController player;
-   
+   private PlayerController _enemy;
+   private Collider2D _enemyInAtackArea;
+
    private Vector3 _sizeOfAtackArea {
       get {
          return new Vector3(_atackArea, 1.5f, 0);
@@ -34,13 +35,16 @@ public class PlantEnemy : MonoBehaviour {
    }
 
    private void Update() {
-      Collider2D _enemyInAtackArea = Physics2D.OverlapBox(transform.position, _sizeOfAtackArea, 0, _whoIsEnemy);
-      tryToFlip(_enemyInAtackArea);
+      _enemyInAtackArea = Physics2D.OverlapBox(transform.position, _sizeOfAtackArea, 0, _whoIsEnemy);
+
+      if (_enemyInAtackArea && !isLookingToEnemy()) {
+         flip();
+      }
    }
 
    private void FixedUpdate() {
-      if (player != null && Time.time - _lastAtackTime > _atackDelay) {
-         player.takeDamage(_takedDamage);
+      if (_enemy != null && Time.time - _lastAtackTime > _atackDelay) {
+         _enemy.takeDamage(_takedDamage);
          _animator.SetTrigger(_atackAnimationKey);
          _lastAtackTime = Time.time;
       }
@@ -49,26 +53,25 @@ public class PlantEnemy : MonoBehaviour {
    private void OnTriggerEnter2D(Collider2D other) {
       var player = other.GetComponent<PlayerController>();
       if (player != null) {
-         this.player = player;
+         this._enemy = player;
       }
    }
 
    private void OnTriggerExit2D(Collider2D other) {
       var player = other.GetComponent<PlayerController>();
-      if (this.player == player) {
-         this.player = null;
+      if (this._enemy == player) {
+         this._enemy = null;
       }
    }
    
-   private void tryToFlip(Collider2D enemy) {
-      if (enemy != null) {
-         bool isRightSide = enemy.transform.position.x > transform.position.x ? true : false;
-
-         if ((isRightSide && !_isLookingRight) || (!isRightSide && _isLookingRight)) {
-            _isLookingRight = !_isLookingRight;
-            transform.Rotate(0, 180, 0);
-         }
-      }
+   private bool isLookingToEnemy() {
+      return _enemyInAtackArea.transform.position.x > transform.position.x && _isLookingRight
+         ||  _enemyInAtackArea.transform.position.x < transform.position.x && !_isLookingRight;
+   }
+   
+   private void flip() {
+      _isLookingRight = !_isLookingRight;
+      transform.Rotate(0, 180, 0);
    }
    
    private void OnDrawGizmos() {

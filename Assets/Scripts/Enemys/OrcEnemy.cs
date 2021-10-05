@@ -84,7 +84,9 @@ public class OrcEnemy : MonoBehaviour {
         
         _animator.SetBool(_walkAnimatinKey, false);
 
-        tryFlipToEnemy();
+        if (!isLookingToEmemy() && _enemyInArea != null) {
+            flip();
+        }
     }
     
     private void Shoot() {
@@ -102,23 +104,19 @@ public class OrcEnemy : MonoBehaviour {
         _animator.SetBool(_atackAnimatinKey, false);
         
         _rigidbody.velocity = transform.right * _speed;
-        tryFlipFromWalkingBorder();
+        if (isTouchingMovementBorder()) {
+            flip();
+        }
     }
     
-    private void tryFlipFromWalkingBorder() {
-        bool needTurnLeft = transform.position.x >= _startPosition.x + _patrolArea && _isWalkingRight;
-        bool needTurnRight = transform.position.x <= _startPosition.x - _patrolArea && !_isWalkingRight;
-        
-        if (needTurnLeft || needTurnRight) flip();
+    private bool isTouchingMovementBorder() {
+        return (transform.position.x >= _startPosition.x + _patrolArea && _isWalkingRight)
+            || (transform.position.x <= _startPosition.x - _patrolArea && !_isWalkingRight);
     }
-
-    private void tryFlipToEnemy() {
-        if (_enemyInArea != null) {
-            bool needTurnRight = _enemyInArea.gameObject.transform.position.x < transform.position.x && _isWalkingRight;
-            bool needTurnLeft = _enemyInArea.gameObject.transform.position.x > transform.position.x && !_isWalkingRight;
-
-            if (needTurnRight || needTurnLeft) flip();
-        }
+    
+    private bool isLookingToEmemy() {
+        return _enemyInArea.gameObject.transform.position.x < transform.position.x && !_isWalkingRight
+            || _enemyInArea.gameObject.transform.position.x > transform.position.x && _isWalkingRight;
     }
 
     private void flip() {

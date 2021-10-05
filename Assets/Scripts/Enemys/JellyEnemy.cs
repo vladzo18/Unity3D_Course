@@ -39,10 +39,14 @@ public class JellyEnemy : MonoBehaviour {
    }
 
    private void Update() {
-      if (transform.position.x > _startPosition.x + _walkRange && _isWalkingRight
-      || transform.position.x < _startPosition.x - _walkRange && !_isWalkingRight) {
+      if (isTouchingMovementBorder()) {
          flip();
       }
+   }
+
+   private bool isTouchingMovementBorder() {
+      return transform.position.x > _startPosition.x + _walkRange && _isWalkingRight
+             || transform.position.x < _startPosition.x - _walkRange && !_isWalkingRight;
    }
 
    private void flip() {

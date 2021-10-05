@@ -19,12 +19,12 @@ public class AgentEnemy : MonoBehaviour {
 
     private bool _canShoot = false;
     private int _curentHealthAmount;
+    private Collider2D _playerCollider;
     
     private void FixedUpdate() {
         if (_canShoot) {
             return;
         }
-        
         checkIfCanShoot();
     }
 
@@ -35,24 +35,31 @@ public class AgentEnemy : MonoBehaviour {
     }
 
     private void checkIfCanShoot() {
-        Collider2D player = Physics2D.OverlapBox(transform.position, new Vector2(_atackRange, 2), 0, _whatIsPlayer);
+        _playerCollider = Physics2D.OverlapBox(transform.position, new Vector2(_atackRange, 2), 0, _whatIsPlayer);
 
-        if (player != null) {
+        if (_playerCollider) {
             _canShoot = true;
-            startShoot(player.transform.position);
+            startShoot();
         } else {
             _canShoot = false;
         }
     }
     
-    private void startShoot(Vector2 playerPosition) {
-        if (transform.position.x > playerPosition.x && _isLookingRight 
-            || transform.position.x < playerPosition.x && !_isLookingRight) {
-            _isLookingRight = !_isLookingRight;
-            transform.Rotate(0, 180, 0);
+    private void startShoot() {
+        if (!isLookingToPlayer()) {
+            flip();
         }
-        
         _animator.SetBool(_shootAnimationKey, true);
+    }
+
+    private bool isLookingToPlayer() {
+        return transform.position.x >  _playerCollider.transform.position.x && !_isLookingRight 
+               || transform.position.x < _playerCollider.transform.position.x && _isLookingRight;
+    }
+    
+    private void flip() {
+        _isLookingRight = !_isLookingRight;
+        transform.Rotate(0, 180, 0);
     }
     
     public void Shoot() {

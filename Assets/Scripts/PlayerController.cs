@@ -164,14 +164,14 @@ public class PlayerController : MonoBehaviour {
    public void increseHealth(int healthAmount) {
       if (!isHealthFull()) {
          _currentHealthAmount += healthAmount;
-         StartCoroutine(someCorutine(healthAmount, _healthAmountSlider));
+         StartCoroutine(lerpIncreseBar(healthAmount, _healthAmountSlider));
       }
    }
 
    public void increseMana(int manaAmount) {
       if (!isManaFull()) {
          _currentManaAmount += manaAmount;
-         StartCoroutine(someCorutine(manaAmount, _manaAmountSlider));
+         StartCoroutine(lerpIncreseBar(manaAmount, _manaAmountSlider));
       }
    }
 
@@ -200,10 +200,9 @@ public class PlayerController : MonoBehaviour {
       return _currentHealthAmount >= _maxHealyhAmount;
    }
    
-   private IEnumerator someCorutine(int amount, Slider slider) {
-      int goalAmount = (int)(slider.value + amount);
-      
-      while (slider.value < goalAmount) {
+   private IEnumerator lerpIncreseBar(int amount, Slider slider) {
+      while (amount != 0) {
+         amount--;
          slider.value += 1;
          yield return new WaitForSeconds(0.035f);
       }
