@@ -1,10 +1,8 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
+using Enemys;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class AgentEnemy : MonoBehaviour {
+public class AgentEnemy : MonoBehaviour , IDamageable {
     [SerializeField] private float _atackRange;
     [SerializeField] private LayerMask _whatIsPlayer;
     [SerializeField] private Transform _muzzle;
@@ -12,6 +10,7 @@ public class AgentEnemy : MonoBehaviour {
     [SerializeField] private bool _isLookingRight;
     [SerializeField] private int _maxHealthAmount;
     [SerializeField] private Slider _healthBar;
+    [SerializeField] private GameObject _enemySystem;
 
     [Header("Animations")]
     [SerializeField] private Animator _animator;
@@ -20,7 +19,18 @@ public class AgentEnemy : MonoBehaviour {
     private bool _canShoot = false;
     private int _curentHealthAmount;
     private Collider2D _playerCollider;
-    
+
+    public int CurentHealthAmount {
+        get => _curentHealthAmount;
+        set {
+            _curentHealthAmount = value;
+            _healthBar.value = value;
+            if (_curentHealthAmount <= 0) {
+                Destroy(_enemySystem);
+            }
+        }
+    }
+
     private void FixedUpdate() {
         if (_canShoot) {
             return;
@@ -29,9 +39,8 @@ public class AgentEnemy : MonoBehaviour {
     }
 
     private void Awake() {
-        _curentHealthAmount = _maxHealthAmount;
         _healthBar.maxValue = _maxHealthAmount;
-        _healthBar.value = _maxHealthAmount;
+        CurentHealthAmount = _maxHealthAmount;
     }
 
     private void checkIfCanShoot() {
@@ -74,5 +83,9 @@ public class AgentEnemy : MonoBehaviour {
     private void OnDrawGizmos() {
         Gizmos.color = Color.blue;
         Gizmos.DrawWireCube(transform.position, new Vector3(_atackRange, 2, 0));
+    }
+
+    public void takeDamage(int takedDamage) {
+        CurentHealthAmount -= takedDamage;
     }
 }

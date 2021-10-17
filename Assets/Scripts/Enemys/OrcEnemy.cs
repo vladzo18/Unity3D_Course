@@ -1,15 +1,11 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using TMPro.EditorUtilities;
-using UnityEditor;
+using Enemys;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class OrcEnemy : MonoBehaviour {
+public class OrcEnemy : MonoBehaviour , IDamageable {
     private enum OrcStates {
         Patrol,
-        Attack
+        Attack 
     };
     private OrcStates _curentState;
 
@@ -23,6 +19,7 @@ public class OrcEnemy : MonoBehaviour {
     [SerializeField] private Transform _muzzle;
     [SerializeField] private int _maxHealthAmount;
     [SerializeField] private Slider _healthBar;
+    [SerializeField] private GameObject _enemySystem;
 
     [Header("Animations")] 
     [SerializeField] private Animator _animator;
@@ -42,13 +39,26 @@ public class OrcEnemy : MonoBehaviour {
                 return _startPosition;
         }
     }
+    public int CurentHealthAmount {
+        get => _curentHealthAmount;
+        set {
+            _curentHealthAmount = value;
+            _healthBar.value = value;
+            if (_curentHealthAmount <= 0) {
+                Destroy(_enemySystem);
+            }
+        }
+    }
+
+    public void takeDamage(int takedDamage) {
+        CurentHealthAmount -= takedDamage;
+    }
     
     private void Awake() {
         _curentState = OrcStates.Patrol;
         _startPosition = transform.position;
-        _curentHealthAmount = _maxHealthAmount;
         _healthBar.maxValue = _maxHealthAmount;
-        _healthBar.value = _curentHealthAmount;
+        CurentHealthAmount = _maxHealthAmount;
     }
 
     private void Update() {
@@ -73,7 +83,6 @@ public class OrcEnemy : MonoBehaviour {
         }
 
         _rigidbody.velocity = Vector2.zero;
-        
         
         if (Time.time - _lastAtackTime > _atackDelay) {
             _animator.SetBool(_atackAnimatinKey, true);
@@ -130,4 +139,5 @@ public class OrcEnemy : MonoBehaviour {
         Gizmos.color = Color.blue;
         Gizmos.DrawWireCube(DrawingGizosCenter, new Vector2(_patrolArea * 2, 2));
     }
+    
 }

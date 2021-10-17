@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using Enemys;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -7,10 +8,8 @@ using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour {
    [Header("Movement")]
-   [SerializeField] private Transform _transform;
    [SerializeField] private Rigidbody2D _rigidbody;
-   [SerializeField] private SpriteRenderer _spriteRenderer;
-   
+
    [Header("Jump")]
    [SerializeField] private Transform _groundedTrigger;
    [SerializeField] private LayerMask _groundLayer;
@@ -26,11 +25,9 @@ public class PlayerController : MonoBehaviour {
    [Header("Player characteristic")]
    [SerializeField] private float _jumpForce;
    [SerializeField] private float _movementSpead;
-   [SerializeField] private MoveVariant _variantOfMovement;
    [SerializeField] private int _maxHealyhAmount;
-   [SerializeField] private int _currentHealthAmount;
    [SerializeField] private int _maxManaAmount;
-   [SerializeField] private int _currentManaAmount;
+   [SerializeField] private bool _isLookingRight;
 
    [Header("Animation")]
    [SerializeField] private Animator _animator;
@@ -38,11 +35,23 @@ public class PlayerController : MonoBehaviour {
    [SerializeField] private string _runAnimationKey;
    [SerializeField] private string _crouchAnimationKey;
    [SerializeField] private string _hurtAnimationKey;
+   [SerializeField] private string _atackAnimationKey;
+   [SerializeField] private string _castAnimationKey;
 
    [Header("UI")] 
    [SerializeField] private TMP_Text _coinsAmountText;
    [SerializeField] private Slider _healthAmountSlider;
    [SerializeField] private Slider _manaAmountSlider;
+
+   [Header("Atack")] 
+   [SerializeField] private int _swordDamage;
+   [SerializeField] private Transform _swordAtackPoint;
+   [SerializeField] private float _swordAtackRange;
+   [SerializeField] private LayerMask _enemyLayer;
+   [SerializeField] private int _castDamage;
+   [SerializeField] private Transform _castAtackPoint;
+   [SerializeField] private float _castLength;
+   [SerializeField] private LineRenderer _castLine;
 
    private float _horizontalDirection;
    private float _verticalDirection;
@@ -52,9 +61,12 @@ public class PlayerController : MonoBehaviour {
    private int _coins;
    private float _lastPushTime;
    private bool _isGrounded;
+   private int _currentHealthAmount;
+   private int _currentManaAmount;
+   private bool _needToAtack;
+   private bool _needToCast;
 
    public bool canClimb { get; set; }
-
    public int Coins {
       get => _coins;
       set {
@@ -62,12 +74,34 @@ public class PlayerController : MonoBehaviour {
          _coinsAmountText.text = value.ToString();
       }
    }
-   
+   private int CurrentHealthAmount {
+      get => _currentHealthAmount;
+      set {
+         if (_currentHealthAmount < value && _currentHealthAmount != 0) {
+            StartCoroutine(lerpIncreseBar(value - _currentHealthAmount, _healthAmountSlider));
+         } else {
+            _healthAmountSlider.value = value;
+         }
+         _currentHealthAmount = value;
+      }
+   }
+   private int CurrentManaAmount {
+      get => _currentManaAmount;
+      set {
+         if (_currentManaAmount < value && _currentManaAmount != 0) {
+            StartCoroutine(lerpIncreseBar(value - _currentManaAmount, _manaAmountSlider));
+         } else {
+            _manaAmountSlider.value = value;
+         }
+         _currentManaAmount = value;
+      }
+   }
+
    private void Awake() {
       _healthAmountSlider.maxValue = _maxHealyhAmount;
-      _healthAmountSlider.value = _currentHealthAmount;
+      CurrentHealthAmount = _maxHealyhAmount;
       _manaAmountSlider.maxValue = _maxManaAmount;
-      _manaAmountSlider.value = _currentManaAmount;
+      CurrentManaAmount = _maxManaAmount;
    }
 
    private void Update() {
@@ -75,6 +109,13 @@ public class PlayerController : MonoBehaviour {
       _verticalDirection = Input.GetAxis("Vertical");
       _isJumping = Convert.ToBoolean(Input.GetAxis("Jump"));
       _isCrouching = Input.GetKey(KeyCode.C);
+      if (Input.GetButtonDown("Fire1")) {
+         _needToAtack = true;
+      }
+
+      if (Input.GetButtonDown("Fire2")) {
+         _needToCast = true;
+      }
    }
 
    private void FixedUpdate() {
@@ -84,15 +125,31 @@ public class PlayerController : MonoBehaviour {
          if (_isGrounded && Time.time - _lastPushTime > 0.02f) {
             _animator.SetBool(_hurtAnimationKey, false);
          }
-         
+         _needToAtack = false;
+         _needToCast = false;
          return;
       }
       
-      movePlayerLogic(_variantOfMovement);
-      
+      climbLogic();
       jumpLogic();
       crouchLogic();
-      climbLogic();
+     
+      
+      if (_needToAtack ) {
+         startAtack();
+         if (_isGrounded) {
+            _horizontalDirection = 0;
+         }
+      }
+
+      if (_needToCast && _isGrounded) {
+         startCast();
+         if (_isGrounded) {
+            _horizontalDirection = 0;
+         }
+      }
+      
+      movePlayerLogic();
    }
 
    private void OnDrawGizmos() {
@@ -100,34 +157,28 @@ public class PlayerController : MonoBehaviour {
       Gizmos.DrawWireSphere(_groundedTrigger.position, _groundedTriggerRadius);
       Gizmos.color = Color.magenta;
       Gizmos.DrawWireSphere(_topTrigger.position, _topTriggerRadius);
+      Gizmos.color = Color.red;
+      Gizmos.DrawWireCube(_swordAtackPoint.position, Vector2.one * _swordAtackRange);
    }
    
-   private void movePlayerLogic(MoveVariant mv) {
-      switch (mv) {
-         case MoveVariant.RigitbodyVelocity: 
-            _rigidbody.velocity = new Vector2(_horizontalDirection * _movementSpead, _rigidbody.velocity.y);
-            break;
-         case MoveVariant.RigitbodyAddForce:
-            _rigidbody.AddForce(new Vector2(_horizontalDirection * _movementSpead, 0));
-            break;
-         case MoveVariant.TransformTranslete:
-            _transform.Translate(_horizontalDirection * _movementSpead, 0, 0);
-            break;
-         case MoveVariant.TransformPosition:
-            if (_horizontalDirection != 0 ) 
-               _transform.position = _transform.position + (Vector3.right * (_horizontalDirection * _movementSpead));
-            break;
-         case MoveVariant.RigitbodyMovePosition:
-            if (_horizontalDirection != 0 ) 
-               _rigidbody.MovePosition(_rigidbody.position + (Vector2.right * (_horizontalDirection * _movementSpead)));
-            break;
-      }
-      
-      flipLogic();
-      
+   private void movePlayerLogic() {
+      _rigidbody.velocity = new Vector2(_horizontalDirection * _movementSpead, _rigidbody.velocity.y);
       _animator.SetBool(_runAnimationKey, _horizontalDirection != 0);
+      
+      if (isNotTurnedToMovementSide()) {
+         flip();
+      }
    }
 
+   private bool isNotTurnedToMovementSide() {
+      return (_horizontalDirection > 0 && !_isLookingRight) || (_horizontalDirection < 0 && _isLookingRight);
+   }
+   
+   private void flip() {
+      _isLookingRight = !_isLookingRight;
+      transform.Rotate(0, 180, 0);
+   }
+   
    private void jumpLogic() {
       if (_isGrounded && _isJumping && !_jumpLock) {
          _rigidbody.AddForce(Vector2.up * _jumpForce);
@@ -135,17 +186,14 @@ public class PlayerController : MonoBehaviour {
       }
       _animator.SetBool(_jumpAnimationKey, !_isGrounded && !canClimb);
    }
-
-   private void flipLogic() {
-      if (_horizontalDirection > 0 && _spriteRenderer.flipX) {
-         _spriteRenderer.flipX = false;
-      } else if (_horizontalDirection < 0 && !_spriteRenderer.flipX) {
-         _spriteRenderer.flipX = true;
-      }
-   }
    
    private void crouchLogic() {
       bool canStand = !Physics2D.OverlapCircle(_topTrigger.position, _topTriggerRadius, _topLayer);
+
+      if (!_headerCollider.enabled) {
+         _needToAtack = false;
+         _needToCast = false;
+      }
       
       _headerCollider.enabled = !_isCrouching && canStand;
       _animator.SetBool(_crouchAnimationKey,  !_headerCollider.enabled);
@@ -162,42 +210,39 @@ public class PlayerController : MonoBehaviour {
    }
 
    public void increseHealth(int healthAmount) {
-      if (!isHealthFull()) {
-         _currentHealthAmount += healthAmount;
-         StartCoroutine(lerpIncreseBar(healthAmount, _healthAmountSlider));
+      if (!isHealthFull()) { 
+         CurrentHealthAmount += healthAmount;
       }
    }
 
    public void increseMana(int manaAmount) {
       if (!isManaFull()) {
-         _currentManaAmount += manaAmount;
-         StartCoroutine(lerpIncreseBar(manaAmount, _manaAmountSlider));
+         CurrentManaAmount += manaAmount;
       }
    }
 
    public void takeDamage(int damage, float pushPower = 0, float enemyPositionX = 0) {
-      _currentHealthAmount -= damage;
-      _healthAmountSlider.value = _currentHealthAmount;
-      
-      if (_currentHealthAmount <= 0) {
+      CurrentHealthAmount -= damage;
+
+      if (CurrentHealthAmount <= 0) {
          gameObject.SetActive(false);
          Invoke(nameof(reloadSceneIfPlayerDeed), 2f);
       }
 
       if (pushPower != 0) {
-         int pushDirection = _transform.position.x > enemyPositionX ? 1 : -1;
-         _rigidbody.AddForce(new Vector2(pushDirection * pushPower / 2, pushPower));
+         int pushDirection = transform.position.x > enemyPositionX ? 1 : -1;
+         _rigidbody.AddForce(new Vector2(pushDirection * (pushPower / 2), pushPower));
          _animator.SetBool(_hurtAnimationKey, true);
          _lastPushTime = Time.time;
       }
    }
 
    public bool isManaFull() {
-      return _currentManaAmount >= _maxManaAmount;
+      return CurrentManaAmount >= _maxManaAmount;
    }
    
    public bool isHealthFull() {
-      return _currentHealthAmount >= _maxHealyhAmount;
+      return CurrentHealthAmount >= _maxHealyhAmount;
    }
    
    private IEnumerator lerpIncreseBar(int amount, Slider slider) {
@@ -212,11 +257,55 @@ public class PlayerController : MonoBehaviour {
       SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
    }
 
-   private enum MoveVariant {
-      TransformPosition,
-      TransformTranslete, 
-      RigitbodyVelocity,
-      RigitbodyAddForce,
-      RigitbodyMovePosition
+   private void startAtack() {
+      if (_animator.GetBool(_atackAnimationKey)) {
+         return;
+      }
+      _animator.SetBool(_atackAnimationKey, true);
+   }
+
+   private void startCast() {
+      if (_animator.GetBool(_castAnimationKey)) {
+         return;
+      }
+
+      if (CurrentManaAmount > 0) {
+         _animator.SetBool(_castAnimationKey, true);
+      } else {
+         _needToCast = false;
+      }
+   }
+   
+   private void atack() {
+      Collider2D[] targets = Physics2D.OverlapBoxAll(_swordAtackPoint.position, Vector2.one * _swordAtackRange, _enemyLayer);
+
+      foreach (var target in targets) {
+         IDamageable enemy = target.GetComponent<IDamageable>();
+         enemy?.takeDamage(_swordDamage);
+      }   
+      
+      _animator.SetBool(_atackAnimationKey, false);
+      _needToAtack = false;
+   }
+
+   private void cast() {
+      RaycastHit2D[] hits = Physics2D.RaycastAll(_castAtackPoint.position, transform.right, _castLength, _enemyLayer);
+
+      foreach (var hit in hits) {
+         IDamageable enemy = hit.collider.GetComponent<IDamageable>();
+         enemy?.takeDamage(_castDamage);
+      }
+
+      CurrentManaAmount -= 30;
+      _animator.SetBool(_castAnimationKey, false);
+      _castLine.SetPosition(0, _castAtackPoint.position);
+      _castLine.SetPosition(1, _castAtackPoint.position + transform.right * _castLength);
+      _castLine.enabled = true;
+      _needToCast = false;
+      Invoke(nameof(disableLine), 0.1f);
+   }
+
+   private void disableLine() {
+      _castLine.enabled = false;
    }
 }

@@ -1,10 +1,8 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
+using Enemys;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class PlantEnemy : MonoBehaviour {
+public class PlantEnemy : MonoBehaviour , IDamageable{
    [SerializeField] private float _atackArea;
    [SerializeField] private LayerMask _whoIsEnemy;
    [SerializeField] private int _takedDamage;
@@ -12,6 +10,7 @@ public class PlantEnemy : MonoBehaviour {
    [SerializeField] private float _atackDelay;
    [SerializeField] private int _maxHealthAmount;
    [SerializeField] private Slider _healthBar;
+   [SerializeField] private GameObject _enemySystem;
 
    [Header("Animation")]
    [SerializeField] private string _atackAnimationKey;
@@ -27,11 +26,21 @@ public class PlantEnemy : MonoBehaviour {
          return new Vector3(_atackArea, 1.5f, 0);
       }
    }
-   
+
+   public int CurentHealthAmount {
+      get => _curentHealthAmount;
+      set {
+         _curentHealthAmount = value;
+         _healthBar.value = value;
+         if (_curentHealthAmount <= 0) {
+            Destroy(_enemySystem);
+         }
+      }
+   }
+
    private void Awake() {
-      _curentHealthAmount = _maxHealthAmount;
       _healthBar.maxValue = _maxHealthAmount;
-      _healthBar.value = _maxHealthAmount;
+      CurentHealthAmount = _maxHealthAmount;
    }
 
    private void Update() {
@@ -53,14 +62,14 @@ public class PlantEnemy : MonoBehaviour {
    private void OnTriggerEnter2D(Collider2D other) {
       var player = other.GetComponent<PlayerController>();
       if (player != null) {
-         this._enemy = player;
+         _enemy = player;
       }
    }
 
    private void OnTriggerExit2D(Collider2D other) {
       var player = other.GetComponent<PlayerController>();
-      if (this._enemy == player) {
-         this._enemy = null;
+      if (_enemy == player) {
+         _enemy = null;
       }
    }
    
@@ -77,5 +86,10 @@ public class PlantEnemy : MonoBehaviour {
    private void OnDrawGizmos() {
       Gizmos.color = Color.blue;
       Gizmos.DrawWireCube(transform.position, _sizeOfAtackArea);
+   }
+
+
+   public void takeDamage(int takedDamage) {
+      CurentHealthAmount -= takedDamage;
    }
 }

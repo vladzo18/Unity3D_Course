@@ -1,10 +1,8 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
+using Enemys;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class JellyEnemy : MonoBehaviour {
+public class JellyEnemy : MonoBehaviour , IDamageable {
    [SerializeField] private float _walkRange;
    [SerializeField] private float _speed;
    [SerializeField] private int _takedDamage;
@@ -13,6 +11,7 @@ public class JellyEnemy : MonoBehaviour {
    [SerializeField] private Rigidbody2D _rigidbody;
    [SerializeField] private int _maxHealthAmount;
    [SerializeField] private Slider _healthBar;
+   [SerializeField] private GameObject _enemySystem;
    
    private Vector2 _startPosition;
    private int _curentHealthAmount;
@@ -26,12 +25,25 @@ public class JellyEnemy : MonoBehaviour {
          }
       }
    }
-
+   public int CurentHealthAmount {
+      get => _curentHealthAmount;
+      set {
+         _curentHealthAmount = value;
+         _healthBar.value = value;
+         if (_curentHealthAmount <= 0) {
+            Destroy(_enemySystem);
+         }
+      }
+   }
+   
+   public void takeDamage(int takedDamage) {
+      CurentHealthAmount -= takedDamage;
+   }
+   
    private void Start() {
       _startPosition = transform.position;
-      _curentHealthAmount = _maxHealthAmount;
       _healthBar.maxValue = _maxHealthAmount;
-      _healthBar.value = _maxHealthAmount;
+      CurentHealthAmount = _maxHealthAmount;
    }
 
    private void FixedUpdate() {

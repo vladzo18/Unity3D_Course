@@ -20,13 +20,36 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c2187b14-add1-496d-a706-54b6e6ff11fd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.lab1-2/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.lab1-2/.idea/indexLayout.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Enemys/IDamageable.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Enemys/IDamageable.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.lab1-2/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.lab1-2/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.lab1-2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.lab1-2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player/Atack.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Player/Atack.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player/Player.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Player/Player.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player/Run.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Player/Run.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Arrow.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Arrow.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/bullet.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/bullet.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level_0.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level_0.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level_1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level_1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/EndLevelDoor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/EndLevelDoor.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemys/AgentEnemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemys/AgentEnemy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemys/Arrow.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemys/Arrow.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemys/Bullet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemys/Bullet.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemys/FollowTo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemys/FollowTo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemys/JellyEnemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemys/JellyEnemy.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemys/OrcEnemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemys/OrcEnemy.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemys/PlantEnemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemys/PlantEnemy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Items/BottleHp.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Items/BottleHp.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Items/Coin.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Items/Coin.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Items/Item.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Items/Item.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Items/ManaBoll.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Items/ManaBoll.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Ladder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Ladder.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Spikes.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Spikes.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,21 +68,24 @@
       <list>
         <option value="$PROJECT_DIR$/Assets/Scripts/Item.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Items/Shield.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Items/BottleHp.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Items/ManaBoll.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Items/Item.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Items/Coin.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Spikes.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Ladder.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/EndLevelDoor.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Enemys/FollowTo.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Enemys/Arrow.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Enemys/OrcEnemy.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Items/BottleHp.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Items/Coin.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Items/Item.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Items/ManaBoll.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemys/Bullet.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemys/Arrow.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemys/FollowTo.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemys/IDamageable.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemys/JellyEnemy.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemys/AgentEnemy.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemys/PlantEnemy.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Enemys/JellyEnemy.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/EndLevelDoor.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemys/OrcEnemy.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Cloud.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CloudSpawner.cs" />
       </list>
     </option>
   </component>
@@ -118,6 +144,9 @@
       <workItem from="1633346375870" duration="23159000" />
       <workItem from="1633431438847" duration="6255000" />
       <workItem from="1633446025191" duration="5759000" />
+      <workItem from="1633608456416" duration="909000" />
+      <workItem from="1634382867232" duration="11994000" />
+      <workItem from="1634469589448" duration="9787000" />
     </task>
     <servers />
   </component>
@@ -155,30 +184,17 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/PlayerController.cs</url>
-          <line>177</line>
-          <properties documentPath="C:\Projects\Unity\lab1-2\Assets\Scripts\PlayerController.cs" initialLine="177">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Enemys/OrcEnemy.cs</url>
+          <line>105</line>
+          <properties documentPath="C:\Projects\Unity\lab1-2\Assets\Scripts\Enemys\OrcEnemy.cs" initialLine="106">
             <startOffsets>
-              <option value="6088" />
+              <option value="3036" />
             </startOffsets>
             <endOffsets>
-              <option value="6089" />
+              <option value="3037" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="20" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/PlayerController.cs</url>
-          <line>163</line>
-          <properties documentPath="C:\Projects\Unity\lab1-2\Assets\Scripts\PlayerController.cs" initialLine="163">
-            <startOffsets>
-              <option value="5634" />
-            </startOffsets>
-            <endOffsets>
-              <option value="5635" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="22" />
+          <option name="timeStamp" value="31" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

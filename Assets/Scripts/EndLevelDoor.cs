@@ -1,9 +1,5 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using Object = System.Object;
 
 public class EndLevelDoor : MonoBehaviour {
    [SerializeField] private int _coinsToNextLevel;
@@ -20,6 +16,6 @@ public class EndLevelDoor : MonoBehaviour {
    }
 
    private void nextLevel() {
-      SceneManager.LoadScene(SceneManager.sceneCount);
+      SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
    }
 }
