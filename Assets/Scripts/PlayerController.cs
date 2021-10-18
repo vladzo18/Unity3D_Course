@@ -112,7 +112,6 @@ public class PlayerController : MonoBehaviour {
       if (Input.GetButtonDown("Fire1")) {
          _needToAtack = true;
       }
-
       if (Input.GetButtonDown("Fire2")) {
          _needToCast = true;
       }
@@ -135,14 +134,14 @@ public class PlayerController : MonoBehaviour {
       crouchLogic();
      
       
-      if (_needToAtack ) {
+      if (_needToAtack) {
          startAtack();
          if (_isGrounded) {
             _horizontalDirection = 0;
          }
       }
 
-      if (_needToCast && _isGrounded) {
+      if (_needToCast) {
          startCast();
          if (_isGrounded) {
             _horizontalDirection = 0;
